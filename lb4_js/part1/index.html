@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop 2.0</title>
+    <link rel="stylesheet" href="lb4_styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Pizza Shop 3.0</h2>
+        <form id="pizzaForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label>Pizza Topping</label>
+                <div class="radio-group">
+                    <input type="radio" id="supreme" name="topping" value="Supreme" required>
+                    <label for="supreme">Supreme</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="vegetarian" name="topping" value="Vegetarian">
+                    <label for="vegetarian">Vegetarian</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="hawaiian" name="topping" value="Hawaiian">
+                    <label for="hawaiian">Hawaiian</label>
+                </div>
+            </div>    
+            <div class="form-group">
+                <label for="sauce">Pizza Sauce</label>
+                <select id="sauce" name="sauce" required>
+                    <option value="Tomato">Tomato</option>
+                    <option value="BBQ">BBQ</option>
+                    <option value="Pesto">Pesto</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Optional Extras</label>
+                <input type="checkbox" id="extra-cheese" name="extra_cheese">
+                <label for="extra-cheese">Extra Cheese</label>
+                <input type="checkbox" id="gluten-free" name="gluten_free">
+                <label for="gluten-free">Gluten Free Base</label>
+            </div>
+            <div class="form-group">
+                <label for="instructions">Delivery Instructions:</label>
+                <textarea id="instructions" name="instructions" placeholder="Enter any delivery instructions..."></textarea>
+            </div>
+            <button type="submit" class="button">Send my Order</button>
+        </form>
+    </div>
+
+    <div class="order-table">
+        <h3>Orders</h3>
+        <table id="orderTable" border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Pizza Topping</th>
+                    <th>Sauce</th>
+                    <th>Optional Extras</th>
+                    <th>Delivery Instructions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="lb4_script.js"></script>
+</body>
+</html>

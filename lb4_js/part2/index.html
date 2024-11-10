@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Словник геймера</title>
+    <link rel="stylesheet" href="lb4_styles2.css">
+</head>
+<body>
+    <div class="dictionary-container">
+        <h2>Словник геймера</h2>
+
+        <div class="sidebar">
+            <h3>Терміни:</h3>
+            <ul id="wordList">
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <form id="dictionaryForm" class="form-group">
+                <label for="word">Введіть термін:</label>
+                <input type="text" id="word" name="word" placeholder="Введіть термін для пошуку" required>
+                <button type="submit" class="button">Пошук</button>
+            </form>
+
+            <div id="wordDefinition" class="definition"></div>
+        </div>
+    </div>
+
+    <script src="lb4_script2.js"></script>
+</body>
+</html>

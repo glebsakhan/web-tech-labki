@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.content {
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 100px;
+}
+
+a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #f57709;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #d35400;
+}
